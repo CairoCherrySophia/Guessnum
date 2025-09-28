@@ -1,0 +1,38 @@
+{
+  "name": "number-guess-dapp",
+  "version": "1.0.0",
+  "description": "基于FHEVM的猜数字DApp",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy": "hardhat run scripts/deploy.js",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:sepolia": "hardhat run scripts/deploy-sepolia.js --network sepolia",
+    "deploy:fhenix": "hardhat run scripts/deploy-fhenix.js --network fhenix",
+    "start:frontend": "cd frontend && npm start",
+    "install:frontend": "cd frontend && npm install",
+    "build:frontend": "cd frontend && npm run build"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "ethers": "^6.8.0",
+    "hardhat": "^2.19.0"
+  },
+  "dependencies": {
+    "@fhevm/solidity": "^0.8.0",
+    "@openzeppelin/contracts": "^5.4.0",
+    "@zama-fhe/oracle-solidity": "^0.0.1",
+    "dotenv": "^17.2.2",
+    "fhevm": "^0.6.2"
+  },
+  "keywords": [
+    "dapp",
+    "fhevm",
+    "solidity",
+    "hardhat",
+    "react"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
